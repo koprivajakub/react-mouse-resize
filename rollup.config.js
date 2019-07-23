@@ -25,6 +25,7 @@ export default {
       sourcemap: true
     }
   ],
+  external: ['react', 'react-dom'],
   plugins: [
     external(),
     postcss({
@@ -35,7 +36,7 @@ export default {
     resolve(),
     typescript({
       rollupCommonJSResolveHack: true,
-      clean: true
+      clean: true,
     }),
     commonjs()
   ]

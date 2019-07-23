@@ -1,6 +1,6 @@
 {
-  "short_name": "react-element-resizer",
-  "name": "react-element-resizer",
+  "short_name": "react-mouse-resize",
+  "name": "react-mouse-resize",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

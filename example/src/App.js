@@ -1,13 +1,28 @@
-import React, { Component } from 'react'
+import React, { useState } from "react";
 
-import ExampleComponent from 'react-element-resizer'
+import { HTMLElementResize } from "react-mouse-resize";
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
-}
+const App = () => {
+  const [size, setSize] = useState({
+    width: "auto",
+    height: "auto"
+  });
+  return (
+      <HTMLElementResize size={size} onResized={(size) => {
+        setSize(size);
+      }} mode={"both"}>
+        <div
+          style={{
+            background: "red",
+            width: "100%",
+            height: "100%",
+            minWidth: "100px",
+            minHeight: "100px",
+          }}
+        >
+        </div>
+      </HTMLElementResize>
+  );
+};
+
+export default App;

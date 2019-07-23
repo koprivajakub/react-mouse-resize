@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering handlers render both handlers 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  cursor: row-resize;
+}
+
+.c0:hover .c2 {
+  border-right: none;
+  border-bottom: #9d9d9d dashed 3px;
+}
+
+.c3 {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  cursor: col-resize;
+}
+
+.c0:hover .c3 {
+  border-right: #9d9d9d dashed 3px;
+  border-bottom: none;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <div
+    className="horizontal c2"
+    orientation="HORIZONTAL"
+  />
+  <div
+    className="vertical c3"
+    orientation="VERTICAL"
+  />
+  <div />
+</div>
+`;
+
+exports[`rendering handlers render horizontal handler only 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0:hover .c3 {
+  border-right: none;
+  border-bottom: #9d9d9d dashed 3px;
+}
+
+.c2 {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  cursor: col-resize;
+}
+
+.c0:hover .c2 {
+  border-right: #9d9d9d dashed 3px;
+  border-bottom: none;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "height": "330px",
+      "width": "100px",
+    }
+  }
+>
+  <div
+    className="vertical c2"
+    orientation="VERTICAL"
+  />
+  <div />
+</div>
+`;
+
+exports[`rendering handlers render none handlers 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0:hover .c2 {
+  border-right: none;
+  border-bottom: #9d9d9d dashed 3px;
+}
+
+.c0:hover .c3 {
+  border-right: #9d9d9d dashed 3px;
+  border-bottom: none;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "height": "30px",
+      "width": "20px",
+    }
+  }
+>
+  <div />
+</div>
+`;
+
+exports[`rendering handlers render vertical handler only 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  cursor: row-resize;
+}
+
+.c0:hover .c2 {
+  border-right: none;
+  border-bottom: #9d9d9d dashed 3px;
+}
+
+.c0:hover .c3 {
+  border-right: #9d9d9d dashed 3px;
+  border-bottom: none;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "height": "10px",
+      "width": "1px",
+    }
+  }
+>
+  <div
+    className="horizontal c2"
+    orientation="HORIZONTAL"
+  />
+  <div />
+</div>
+`;
