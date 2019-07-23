@@ -1,6 +1,6 @@
 {
   "name": "react-mouse-resize",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Wrapper component allowing to resize the content by mouse dragging",
   "author": "koprivajakub",
   "license": "MIT",
